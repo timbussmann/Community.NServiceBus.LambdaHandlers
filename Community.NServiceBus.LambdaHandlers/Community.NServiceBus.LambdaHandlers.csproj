@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Community.NServiceBus.LambdaHandlers</PackageId>
+    <Authors>Tim Bussmann</Authors>
+    <Description>Provides support for delegate based handlers for NServiceBus.</Description>
+    <PackageProjectUrl>https://github.com/timbussmann/Community.NServiceBus.LambdaHandlers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/timbussmann/Community.NServiceBus.LambdaHandlers</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
