@@ -15,9 +15,6 @@ namespace Community.NServiceBus.LambdaHandlers
         public LambdaHandlersFeature()
         {
             EnableByDefault();
-            DependsOn("NServiceBus.Features.RegisterHandlersInOrder");
-            // register a registry so it will be reused by the RegisterHandlersInOrder feature in core
-            Defaults(s => s.Set(new MessageHandlerRegistry()));
         }
 
         protected override void Setup(FeatureConfigurationContext context)
