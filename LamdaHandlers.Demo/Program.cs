@@ -11,7 +11,7 @@ namespace LamdaHandlers.Demo
         {
             var endpointConfiguration = new EndpointConfiguration("lambdahandler");
 
-            endpointConfiguration.UseTransport<LearningTransport>();
+            endpointConfiguration.UseTransport(new LearningTransport());
 
             endpointConfiguration.Handle<MyMessage>((message, context) =>
             {

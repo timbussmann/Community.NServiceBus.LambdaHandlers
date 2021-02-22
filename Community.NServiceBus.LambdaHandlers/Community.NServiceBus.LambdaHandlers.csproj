@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
     <PackageId>Community.NServiceBus.LambdaHandlers</PackageId>
     <Authors>Tim Bussmann</Authors>
     <Description>Provides support for delegate based handlers for NServiceBus.</Description>
@@ -17,7 +17,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NServiceBus" Version="7.2.0" />
+    <PackageReference Include="NServiceBus" Version="8.0.0-alpha.852" />
   </ItemGroup>
 
 </Project>

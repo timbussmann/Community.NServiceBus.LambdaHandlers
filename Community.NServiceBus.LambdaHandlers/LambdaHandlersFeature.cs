@@ -8,6 +8,8 @@ using NServiceBus.Unicast;
 
 namespace Community.NServiceBus.LambdaHandlers
 {
+    using Microsoft.Extensions.DependencyInjection;
+
     public class LambdaHandlersFeature : Feature
     {
         public LambdaHandlersFeature()
@@ -49,7 +51,7 @@ namespace Community.NServiceBus.LambdaHandlers
             collectionType.GetMethod("Add").Invoke(handlers, new[] { typeof(LambdaFunctionsDummyInstance), delegateHolderCollection });
 
             // Register instance of dummy type which will be resolved as part of the handler invocation pipeline
-            context.Container.RegisterSingleton(new LambdaFunctionsDummyInstance());
+            context.Services.AddSingleton(new LambdaFunctionsDummyInstance());
         }
 
         class LambdaFunctionsDummyInstance
